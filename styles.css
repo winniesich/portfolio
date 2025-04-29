@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.body-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.main-container {
+    height: 80vh;
+}
+
+#home {
+    background-image: url(images/home-bg.svg);
+    background-size: 1200px 760px;    
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+h1, h2, h3, .hero-section, .hero-section p, ul li a {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+}
+
+p {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+ul li a {
+    color: #000;
+}
+
+img {
+    display: block;
+    margin-inline: auto;
+}
+
+/* Navigation */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 54px;
+    z-index: 1000;
+}
+
+ul li a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+ul .nav-left a:hover {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a {
+    font-size: 20px;
+}
+
+/* To the top */
+
+.to-divs, .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.to-top-button {
+    background: #ebebeb;    
+    padding: 12px 20px;
+    border-radius: 48px;
+    transition: 0.3s ease-in-out;
+}
+
+.to-top-button:hover {
+    background: #d4d4d4;
+}
+
+.to-divs a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-section h1 {
+    margin: 16px 0;
+    font-size: 48px;
+}
+
+/* Projects */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 72px 0;
+}
+
+.projects-container article h2 {
+    font-size: 28px;
+    padding: 8px 0 54px 0;
+}
+
+.projects-container article p {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #888888;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.projects-container article a img {
+    border-radius: 16px;
+}
+
+.zoom-hover {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.zoom-hover img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoom-hover img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+footer {
+    background-color: #F9F9F9;
+    padding: 48px 0;
+    margin-top: 120px;
+}
+
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-container section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container section ul {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-container div {
+    margin-top: 12px;
+}
+
+/* In projects */
+
+.in-projects h1 {
+    margin-bottom: 32px;
+}
+
+.in-projects-header {
+    margin-bottom: 120px;
+}
+
+.in-projects-container {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-bottom: 120px;
+}
+
+.in-projects-container-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.in-projects-container h2 {
+    margin-bottom: 8px;
+}
+
+.in-projects-container-right p{
+    margin-bottom: 12px;
+}
+
+.in-projects main section {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.in-projects main section div{
+    margin-bottom: 32px;
+}
+
+.in-projects main section h2{
+    margin-bottom: 32px;
+}
+
+.in-projects h3{
+    margin-bottom: 12px;
+}
+
+.in-projects img {
+    margin-bottom: 32px;
+}
+
+.view-button {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #6060ff, #9d51ff);    
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 48px;
+    transition: background 0.3s;
+    background-blend-mode: multiply;
+}
+
+.view-button:hover {
+    background: linear-gradient(to right, #6060ff, #9d51ff), rgba(0,0,0,0.15);
+}
+
+/* User research */
+
+.indent {
+    margin-top: 24px;
+    margin-left: 64px;
+    border-left: 2px solid;
+}
+
+.indent p, .indent-list p {
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+
+.indent-list {
+    margin-top: 24px;
+    margin-left: 64px;
+}
+
+/* Final Design */
+
+.final-design img {
+    margin-top: 32px;
+}
+
+/* About  */
+
+.hero-about {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    height: 90vh;
+}
+
+.hero-about h1, .hero-about h2 {
+    margin-bottom: 12px;
+}
+
+.hero-about img {
+    border-radius: 16px;
+    margin: 0;
+}
+
+.hero-about-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
