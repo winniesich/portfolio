@@ -5,37 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/logo-black-bg.svg" type="image/svg" />
-    <title>About | Winnie Sich</title>
+    <title>Winnie Sich | Portfolio</title>
 </head>
 <body>
     <div class="body-container" id="top">
-        <div class="main-container">
+        <div class="main-container" id="home">
             <nav aria-label="main navigation">
                 <ul class="nav-container">
                     <li class="nav-left">
                         <a href="index.html">Winnie Sich</a>
                     </li>
                     <li class="nav-right">
-                        <a href="index.html#work">Work</a>
+                        <a href="#work">Work</a>
                         <a href="about.html">About</a>
                     </li>            
                 </ul>
             </nav>
 
-            <header class="hero-about" aria-label="hero section">
-                <img src="images/about-winnie.jpg" width="400">
-                <div class="hero-about-header-container">
-                    <div>
-                        <h1>Hi, I'm Winnie!</h1>
-                        <p>I'm a <b>Designer & Developer with a B.S. in Computer Science</b> from UC Davis. I am also a cat lover, gamer, and keyboard enthusiast who is navigating my way through this fast and exciting world.</p>
-   
-                    </div>
-                    <div>
-                        <h2>My journey</h2>
-                        <p>Starting the beginning of my junior year, I stumbled upon UX design. I was curious about its relation to computer science so, I spent my junior year taking design classes to stasify the prerequisites for UC Davis' UI/UX Design course. To continue my growth, I also joined multiple design and software organizations to gain hands-on experience in UX design.</p>
-                    </div>
-                </div>
+            <header class="hero-section" aria-label="hero section">
+                <p>Designer & Developer</p>
+                <h1>Winnie Sich</h1>
+                <p>UX Design Intern @ CourseAssist</p>
             </header>
+        </div>
+
+        <main>
+            <div class="projects-container" id="work">
+                <article>
+                    <p>UX Design Sprint @ Design Interactive</p>
+                    <h2>Redefining chore organization through a gamified experience</h2>
+                    <a href="chroll.html" class="zoom-hover"><img src="images/chroll-front.jpg" width="1000"></a>
+                </article>
+                <article>
+                    <p>Product Design @ AggieWorks</p>
+                    <h2>Simplifying students' process of club exploration at UC Davis</h2>
+                    <a href="clubly.html" class="zoom-hover"><img src="images/clubly-front.jpg" width="1000"></a>
+                </article>
+            </div>
+        </main>
+
+        <div class="to-divs" style="margin-top: 48px;">
+            <a href="#top" class="to-top-button"><p>To the top</p></a>
         </div>
     </div>
 
@@ -52,7 +62,7 @@
                 <p>&copy; 2025 Winnie Sich</p>
             </div>
         </div>
-    </footer>    
+    </footer>
 
 </body>
 </html>
