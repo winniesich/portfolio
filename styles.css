@@ -17,12 +17,12 @@
     height: 80vh;
 }
 
-#home {
+/* #home {
     background-image: url(images/home-bg.svg);
     background-size: 1200px 760px;    
     background-repeat: no-repeat; 
     background-position: center;
-}
+} */
 
 h1, h2, h3, .hero-section, .hero-section p, ul li a {
     font-family: 'Noto Sans', 'Arial', sans-serif;
@@ -156,6 +156,10 @@ ul li a:hover {
     overflow: hidden;
     border-radius: 16px;
 }
+
+.courseassist-border {
+    border: 4px solid #eeeeee;
+  }
 
 .zoom-hover img {
     transition: transform 0.3s ease;
