@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/logo-black-bg.svg" type="image/svg" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo-white-round.svg" type="image/svg">
     <title>Winnie Sich | Portfolio</title>
 </head>
 <body>
     <div class="body-container" id="top">
-        <div class="main-container" id="home">
+        <header id="home">
             <nav aria-label="main navigation">
                 <ul class="nav-container">
                     <li class="nav-left">
@@ -22,34 +22,35 @@
                 </ul>
             </nav>
 
-            <header class="hero-section" aria-label="hero section">
-                <p>Designer & Developer</p>
+            <!-- <header class="hero-section" aria-label="hero section"> -->
+            <div class="hero-section" aria-label="hero section">
+                <p>UX Designer & Front-End Developer</p>
                 <h1>Winnie Sich</h1>
-                <p>Currently — UX Design Intern @ CourseAssist</p>
-            </header>
-        </div>
+                <p>Currently — UX Design Intern @ CourseAssist AI</p>
+            </div>
+        </header>
 
         <main>
             <div class="projects-container" id="work">
                 <article>
                     <p>UX Design Intern @ CourseAssist AI</p>
                     <h2>Designing an AI-powered course assistant</h2>
-                    <a href="courseassist.html" class="zoom-hover courseassist-border"><img src="images/courseassist-front.jpg" width="1000"></a>
+                    <a href="courseassist.html" class="zoom-hover courseassist-border"><img src="images/courseassist-front.jpg" width="1000" loading="lazy"></a>
+                </article>
+                <article id="middle-project">
+                    <p>Product Design @ AggieWorks</p>
+                    <h2>Simplifying students' process of club exploration at UC Davis</h2>
+                    <a href="clubly.html" class="zoom-hover"><img src="images/clubly-front.jpg" width="1000" loading="lazy"></a>
                 </article>
                 <article>
                     <p>UX Design Sprint @ Design Interactive</p>
                     <h2>Redefining chore organization through a gamified experience</h2>
-                    <a href="chroll.html" class="zoom-hover"><img src="images/chroll-front.jpg" width="1000"></a>
-                </article>
-                <article>
-                    <p>Product Design @ AggieWorks</p>
-                    <h2>Simplifying students' process of club exploration at UC Davis</h2>
-                    <a href="clubly.html" class="zoom-hover"><img src="images/clubly-front.jpg" width="1000"></a>
+                    <a href="chroll.html" class="zoom-hover"><img src="images/chroll-front.jpg" width="1000" loading="lazy"></a>
                 </article>
             </div>
         </main>
 
-        <div class="to-divs" style="margin-top: 48px;">
+        <div class="to-divs" style="margin-top: 72px;">
             <a href="#top" class="to-top-button"><p>To the top</p></a>
         </div>
     </div>

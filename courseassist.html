@@ -3,54 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/logo-black-bg.svg" type="image/svg" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo-white-round.svg" type="image/svg">
     <title>CourseAssist AI | Winnie Sich</title>
 </head>
 <body>
     <div class="body-container" id="top">
-        <nav aria-label="main navigation">
-            <ul class="nav-container">
-                <li class="nav-left">
-                    <a href="index.html">Winnie Sich</a>
-                </li>
-                <li class="nav-right">
-                    <a href="index.html#work">Work</a>
-                    <a href="about.html">About</a>
-                </li>            
-            </ul>
-        </nav>
-
-        <div class="in-projects">
-            <header class="in-projects-header" aria-label="hero section">
-                <img src="images/courseassist-case-study-banner.jpg" width="1200" style="border: 4px solid #eeeeee;">
-                <h1>CourseAssist AI - An AI-powered course assistant</h1>
+        <header>
+            <nav aria-label="main navigation">
+                <ul class="nav-container">
+                    <li class="nav-left">
+                        <a href="index.html">Winnie Sich</a>
+                    </li>
+                    <li class="nav-right">
+                        <a href="index.html#work">Work</a>
+                        <a href="about.html">About</a>
+                    </li>            
+                </ul>
+            </nav>
+        
+            <!-- <header class="in-projects-header" aria-label="hero section"> -->
+                <img class="banner" src="images/courseassist-case-study-banner.jpg" width="1192" style="border: 4px solid #eeeeee;">
+                <h1 class="project-title">CourseAssist AI - An AI-powered course assistant</h1>
+                <p>CourseAssist AI is an educational technology start-up based in Davis, CA that provides university instructors with an AI course assistant tailored to the individual instructors' courses through training the AI with course-specific material.</p>
                 <div class="in-projects-container">
                     <div class="in-projects-container-left">
                         <div>
-                            <h2>Role</h2>
-                            <p>User experience design, website development</p>
+                            <h2>Roles</h2>
+                            <p>UX design, web design & development, front-end development</p>
                         </div>
                         <div>
-                            <h2>Team</h2>
-                            <p>1 Designer, 1 Developer</p>
-                        </div>
+                            <h2>Tools</h2>
+                            <p>Figma, SMUI, GitHub</p>
+                        </div>   
                         <div>
+                            <h2>Languages</h2>
+                            <p>HTML, CSS/SCSS, JavaScript, Svelte, Python, Flask</p>
+                        </div>                     
+                        <div  aria-labelledby="time-heading">
                             <h2>Time</h2>
-                            <p>Jul 2024 - present</p>
+                            <p><time datetime="2024-07">Jul 2024</time> - present</p>
                         </div>
                     </div>
                     <div class="in-projects-container-right">
-                        <h2>Project Overview</h2>
-                        <p>This is a website in which I worked as a designer and a developer to redesign their company website using Figma, HTML, CSS, and JavaScript.</p>
+                        <h2>Responsibilities</h2>
+                        <h3>Website Redesign</h3>
+                        <p>Project length: 2 weeks</p>
+                        <p>I was responsible for the UI/UX design and implementation of the company's website redesign, involving research, translating the findings into mockups and wireframes using Figma, designing for multiple screen sizes to ensure responsiveness, and implementing the website using HTML, CSS, and JavaScript.</p> 
+                        <p>Currently, I am working on updating the website's content and improving its accessibility.</p>
+                        <h3>Email Notification Settings and Pinned Messages Feature</h3>
+                        <p>I was responsible for the design, front-end, and backend implementation of the email notification settings page for the course chat feature provided in the web application. This involved gathering requirements, creating mockups (Figma), developing the user interface (HTML, SCSS, TypeScript, and SMUI), and integrating with the backend API (Flask/Python). My backend contributions included defining GET API endpoints to query current settings (or set defaults in Firebase) and POST endpoints to save settings to Firebase.
+                        </p>
                     </div>
                 </div>
             </header>
 
+        <div class="in-projects">
             <main>                
-                <section class="final-design">
-                    <h2>Demo</h2>
-                    <div>
+                <section class="process-container">
+                    <h2 class="title-sections">Website Redesign</h2>
+
+                    <section class="process">
+                        <h2>Identifying the Challenge</h2>
+                        <p>Poor readability and ineffective calls to action on the website's landing page present a significant challenge. These detract from the initial user experience and prevent the site from making a lasting impact in driving conversion rates.</p>
+                        <div class="highlight-box">
+                            <!-- <p>&#9889; <b>The challenge:</b> Enhancing readability and calls to action for a stronger first impression and improved engagement</p> -->
+                            <!-- <p>&#9889; <span><b>The challenge:</b> Enhancing the user experience through readability and calls to action for a stronger first impression and improve engagement.</span></p> -->
+                            <p>&#128161; <span><b>How might we</b> improve the overall user experience of the landing page by addressing both readability issues and ineffective calls to action?</span></p>
+                        </div>
+
+                        <h2>Research</h2>
+                        <p>With the 2-week deadline, I had to prioritize efficiently gathering key insights to inform the redesign. My research focused on understanding the target audience, analyzing the competitive landscape, and evaluating the existing website's strengths and weaknesses to identify key areas for improvement through my knowledge of UX design principles.</p>
+                        
+                        <h3>Users</h3>
+                        <p>To understand what potential investors or clients look at, I collaborated with CourseAssist AI's CEO to come up with a list of users to help guide my design choices:</p>
+                        <div class="indent">
+                            <ul>
+                                <li><b>Universities</b> looking to add AI to streamline their course teaching, but with transparency and facilitation</li>
+                                <li><b>Instructors</b> looking to lessen the after-hours workload</li>
+                            </ul>
+                        </div>
+                        <p>Understanding who the potential customers are allowed me to adopt a user-centric approach, tailoring the landing page content to effectively communicate why universities and instructors should consider using CourseAssist AI.</p>
+
+                        <h3>Looking at the competitive landscape</h3>
+                        <p>I also visited other websites that provide a similar product to CourseAssist AI to understand how information is presented to potential clients/investors.</p>
+                        <p>Some common design choices include:</p>
+                        <div class="indent">
+                            <ul>
+                                <li><b>Visual hierarchy</b> which is crucial for readability</li>
+                                <li><b>Grid structure</b> to organize information on their site, providing a consistent, clean layout for readability</li>
+                                <li><b>Images/Media</b> to help demonsrate company's product features to capture user's attention, and emphasizing their most important features</li>
+                                <li><b>Effective calls to action</b> in the navigation bar, hero section, and closing section</li>
+                            </ul>
+                        </div>
+                        <h3>Analyzing the website</h3>
+                        <p>By using my knowledge of UX design principles, I analyzed the existing website to identify its strengths and weaknesses. The navigation bar was simple, making it easy for users to find their way around. However, the website needs improvement in visual hierarchy to clearly differentiate between headers and paragraph text, and in accessibility, particularly regarding readability due to cluttered content and the lack of responsiveness across different screen sizes. Its ineffective use of primary colors and choice of primary calls to action also poses a problem.</p>
+                    </section>
+
+                    <section class="process">
+                        <h2>Ideation & Design</h2>
+                        <p>My primary focus was on reimagining the CourseAssist AI landing page to create a stronger initial impact, and ultimately drive higher conversion rates. This involved exploring various layouts, ensuring responsiveness across different devices, and strategically refining key calls to action.</p>
+
+                        <h3>Experimenting with different layouts</h3>
+                        <p>I explored several layout iterations within Figma, focusing on different arrangements of the navigation bar and the product's feature hightlight.</p>
+                        <img src="images/courseassist-diff-layout.jpg" width="1200" alt="Experimenting with different layouts for the navigation bar and the feature highlight" loading="lazy" style="border: 2px solid #eeeeee;">
+
+                        <h3>Designing for different screen sizes</h3>
+                        <p>The previous website suffered from responsiveness issues, such as content being cut off on smaller screens. To create a more seamless and accessible experience, I designed accross various devices, establishing breakpoints for mobile, tablet, and desktop views to ensure content adapts appropriately to each screen size.</p>
+                        <img src="images/courseassist-sketches.jpg" width="1200" alt="Different sketches of website layout in different screen sizes" loading="lazy" style="border: 2px solid #eeeeee;">
+
+                        <h3>Increasing conversion rates</h3>
+                        <p>To address the goal of increasing conversion rates, I made the strategic decision to shift their primary call to action from "Login" to "Schedule a Demo." This shift recognizes a visitor landing on the page is likely not yet a customer, and "Schedule a Demo" provides a clear, first step pathway in engaging with the product.</p>
+                        <img src="images/courseassist-cta.jpg" width="1200" alt="Before and after of changing primary call to action button" loading="lazy">
+
+                        <h3>Finalizing designs by addressing feedback while ensuring visual consistency</h3>
+                        <p style="margin-bottom: 12px;">Based on client feedback, the layout was adjusted to present the product's features directly rather than within a carousel, as they wanted users to view each feature without skipping them.</p> 
+                        <img src="images/courseassist-feature-final.jpg" width="1200" alt="Final feature design" loading="lazy">
+                        <p>To achieve visual consistency throughout the landing page, I utilized a grid system to guide content placement. Furthermore, despite the absence of a formal design system, I deliberately adopted the web application's primary color palette, featuring a vibrant purple, and its established button style. This approach was taken to maintain visual harmony and create a clear connection between the marketing website and the product itself.</p>
+                        <img src="images/courseassist-grids.jpg" width="1200" alt="Using grids to ensure visual consistency" loading="lazy">
+                        <!-- <h4 style="margin-top: 24px; text-align: center;">Before</h4>
+                        <img src="images/courseassist-before.jpg" width="1200" alt="Final website design of desktop view" loading="lazy" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <h4 style="margin-top: 24px; text-align: center;">After</h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <img src="images/courseassist-desktop.jpg" width="568.95" height="2046.42" alt="Final website design of desktop view" loading="lazy" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                            <img src="images/courseassist-tablet.jpg" width="395.42" height="1813.04" alt="Final website design of tablet view" loading="lazy" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                            <img src="images/courseassist-mobile.jpg" width="186.33" height="2411.38" alt="Final website design of mobile view" loading="lazy" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        </div> -->
+                    </section>
+
+                    <section class="process">
+                        <h2>Development</h2>
+                        <p>Following the design approval, I transitioned to the development phase, building the website with HTML5 for structure, CSS for styling, and JavaScript to implement interactive elements and dynamic functionality.</p>                        
+                        
+                        <h3>Performance optimization</h3>
+                        <div class="indent">
+                            <h4>Compressing & using the right format for media</h4>
+                            <p>Since the website will use a lot of media, from images to video demos, it is crucial to use the correct format and appropriate file size. I ensured that the format of images were JPEG around 500KB in size, and video demos were MP4 to ensure fast loading times.</p>
+                            <h4>Minimizing HTTP requests</h4>
+                            <p>To minimize initial HTTP requests and improve page load time, I implemented lazy-loading for images and video demos. This ensures that media not immediately visible in the viewport is only loaded when the user scrolls, improving the initial loading speed.</p>
+                        </div>
+                       
+
+                        <h3>Accessibility considerations</h3>
+                        <div class="indent">
+                            <h4>Alternative text</h4>
+                            <p>Every media on the website has alternative text to give the media context. This is important because screen readers use this text to convey the media's purpose to visually impaired users.</p>
+                            <h4>Semantic HTML</h4>
+                            <p>I used semantic elements such as &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt; to provide structural meaning to the content. Not only does this aids screen readers in navigating the page, but it also improves SEO and code readability.</p>
+                            <h4>Responsiveness</h4>
+                            <p>To achieve responsiveness, I went for a mobile-first approach and used techniques such as CSS media queries and flexbox layout. This allow users to visit the website in various devices, making it fully operable.</p>
+                            <p>I also tested this on different screen sizes through Chrome DevTools and different devices to properly ensure responsiveness and cross-browser compatibility.</p>
+                            <h4>Color contrast & font size</h4>
+                            <p>I ensured that font sizes were no less than 12 point and utilized tools such as WebAIM's Contrast Checker to guarantee sufficient contrast between text and background colors. This allow all users to perceive the website's information without difficulty.</p>
+                        </div>
+
+                        <h3>Search engine optimization (SEO)</h3>
+                            <!-- <h4>Keywords & keyphrases</h4>
+                            <p>My first step started with research to identify relevant keywords and keyphrases that potential users would use when searching. Tools such as Google Keyword Planner and Keyword Tool and understanding my target audience helped me in identifying terms such as "AI course assistant" that would boost website visibility. I integrated these keywords naturally within the website's content.</p> -->
+                            <div class="indent">
+                                <h4>Meta description tags</h4>
+                                <p>The landing page was implemented with a unique and descriptive meta description tag. This provides search engine crawlers with a summary of the page's content, helping them understand its relevance to what the user is searching for.</p>
+                                <h4>Website structure & responsiveness</h4>
+                                <p>A clear and logical website structure is essential for SEO. I ensured the site had a well-defined hierarchy, making it easier for search engine crawlers to understand and index the content. Furthermore, the responsive design implemented ensures a consistent and positive user experience across all devices, which is a significant ranking factor for search engines.</p>
+                            </div>
+                    </section>
+
+                    <section class="process dev" style="margin-bottom: 0;">
+                        <h2>The Redesign</h2>
+                        <p>I am still currently working to improve the overall accessibility of the website to ensure that it complies with WCAG 2.2 Accessibility Guidelines as time allows. This includes implementing techniques such as adding aria-hidden="true" attribute to decorative &lt;div&gt; elements to improve the experience for screen reader users.</p>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h3 style="text-align: center;">Before</h3>
+                                <img src="images/courseassist-before.jpg" width="600" height="909.66" alt="Before website design" loading="lazy" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                            </div>
+                            <div>
+                                <h3 style="text-align: center;">After</h3>
+                                <img src="images/courseassist-desktop.jpg" width="568.95" height="2046.42" alt="Final website design of desktop view" loading="lazy" style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                            </div>
+                        </div> 
+                        <h3>Navigation bar</h3>
+                        <p>The redesign of the navigation bar effectively utilizes the primary color to establish a clear visual hierarchy, addressing the previous issue where its overuse on links failed to emphasize key elements. The primary color is used for call to actions. I also intentionally changed the previous primary call to action, "Log In" to "Request a Demo" to emphasize engagement and drive conversion rates.</p>
+                        <img src="images/courseassist-final-nav.jpg" width="1200" alt="Final navigation bar design" loading="lazy">
+                        <h3>Hero section</h3>
+                        <p>The previous hero section incorrectly placed "Log In" as their primary call to action, assuming visitors were already users of CourseAssist AI. However, since one of the goals is to increase conversion rates, the redesign shifts the primary call to action to "Request a Demo." Furthermore, the previous website had inconsistencies in the spelling of "Log In," appearing both as "Log In" in the hero section and "Login" in the navigation.</p>
+                        <img src="images/courseassist-hero.jpg" width="1200" alt="Final hero section" loading="lazy">
+                        <h3>Product features</h3>
+                        <p>The previous product feature section had issues in visual hierarchy, making it difficult for users to quickly understand the key benefits. Although the header were bolded, they were the same size as the paragraph text, failing to establish a clear distinction. Moreover, the lack of whitespace between the features resulted in a cluttered and overwhelming layout, which negatively impacted legibility and readability.</p>
+                        <img src="images/courseassist-feature-comparison.jpg" width="1200" alt="Final feature section design" loading="lazy">
+                        <h3>FAQ section</h3>
+                        <p>The previous FAQ section was disorganized and had issues with readability due to the text spanning the entire screen. Additionally, the inconsistent alignment of answers, with some left-aligned and some center-aligned, created an unprofessional experience, making it hard for users to quickly find the information they needed.</p>
+                        <img src="images/courseassist-faq-final.jpg" width="1200" alt="Final FAQ section design" loading="lazy">
+                        <h3>Demo</h3>
+                        <video controls width="1200" muted>
+                            <source src="images/courseassist-desktop-demo.webm" type="video/webm">
+                            Your browser does not support the WebM video format.
+                        </video>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <video controls width="700" muted>
+                                <source src="images/courseassist-tablet-demo.webm" type="video/webm">
+                                Your browser does not support the WebM video format.
+                            </video>
+                            <video controls width="450" muted>
+                                <source src="images/courseassist-mobile-demo.webm" type="video/webm">
+                                Your browser does not support the WebM video format.
+                            </video>
+                        </div>
+                    </section>
+                    <!-- <div>
                         <h3>Before</h3>
                         <a href="images/courseassist-before.gif" target="_blank">
                             <img src="images/courseassist-before.gif" alt="Onboarding flow" width="800">
@@ -61,9 +220,13 @@
                         <a href="images/courseassist-after.gif" target="_blank">
                             <img src="images/courseassist-after.gif" alt="Onboarding flow" width="800">
                         </a>
-                    </div>
+                    </div> -->
                 </section>
-            </main>
+                <section style="margin: 0;">
+                    <h2>Results</h2>
+                    <p>Within the 2-week timeframe, I successfully redesigned and implemented the new CourseAssist AI website, resulting in a significantly improved user experience. By establishing a clear visual hierarchy, users can easily understand the information presented, and the redesigned calls to action provide clearer pathways for engagement. Addressing the previous responsiveness issues also ensures a seamless experience across all devices. These improvements aim to create a stronger first impression, positioning CourseAssist AI more effectively to attract and engage potential clients.</p>
+                </section>
+        </main>
             
             <div class="to-divs" style="margin-top: 48px;">
                 <a href="#top" class="to-top-button"><p>To the top</p></a>
